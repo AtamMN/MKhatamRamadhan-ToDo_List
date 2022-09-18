@@ -1,0 +1,26 @@
+1. Membuka aplikasi to do list
+2. menampilkan semua elemen array to do list yang ada
+3. memilih menu
+
+4. jika memilih menu ADD LIST maka akan menampilkan form add list
+5. apakah user menekan save setelah mengisi form add list?
+6. jika tidak, maka kembali ke no.4
+7. jika iya, maka sistem akan mengecek apakah form memiliki isi?
+8. jika tidak memiliki isi, maka sistem akan menampilkan pesan dan kembali ke no.4
+9. jika memiliki isi, maka sistem akan menampilkan pesan dan menyimpan isi form ke array to do list.
+
+10. jika memilih menu EDIT maka akan menampilkan list yang dapat di edit.
+11. apakah user memilih task done?
+13. jika iya, sistem akan mencoret satu elemen yang dipilih dan kembali ke no.10
+14. apakah user memilih edit task?
+15. jika iya, sistem akan menampilkan form untuk list yang akan diubah.
+16. apakah user menekan tombol save?
+17. jika iya, maka sistem akan menyimpan perubahan list dan kembali ke no.2
+18. jika tidak, kembali ke no.14
+19. apakah user memilih hapus?
+20. jika iya, maka sistem akan menghapus list yang dipilih
+21. apakah user memilih back?
+22. jika iya, kembali ke no.2
+23. jika tidak, kembali ke no.10
+
+24. jika memilih menu exit maka akan menutup aplikasi
