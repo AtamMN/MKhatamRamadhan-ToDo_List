@@ -1,0 +1,57 @@
+# START PROGRAM
+all_list()
+
+FUNCTION all_list()
+	STORE GLOBAL "ToDoList" as ARRAY
+	PRINT "ALL OF YOUR TO DO LIST"
+	FOR EACH list in ToDoList:
+		PRINT "int(list) + ToDoList"
+	tombol()
+END FUNCTION
+
+FUNCTION tombol()
+	WHILE TRUE:
+		response = INPUT "pilih menu: 1. Add List/2. Edit/3. Close"
+		IF response == 1:
+			add()
+		ELSE IF response == 2:
+			edit()
+		ELSE:
+			BREAK
+			END PROGRAM
+END FUNCTION
+
+FUNCTION add()
+	add = INPUT "masukan apa yang ingin anda kerjakan"
+	response = INPUT "Apakah anda ingin save?"
+	IF response == y OR yes:
+		IF add != NULL OR "":
+			APPEND "ToDoList" with "add"
+			PRINT "list added"
+			all_list()
+		ELSE:
+			PRINT "form tidak boleh kosong"
+			add()
+	Else:
+		all_list()
+END FUNCTION
+
+FUNCTION edit()
+	edit = INPUT "pilih nomor list yang anda ingin edit"
+	edit_menu = INPUT "pilih menu: 1. task done/ 2. edit task/3. hapus task/4. back"
+	IF edit_menu == 1:
+		APPEND "ToDoList[edit]" with "style: strikethrough"
+		edit()
+	ELSE IF edit menu == 2:
+		edit_content = INPUT "masukkan list yang akan di edit"
+		response = INPUT "apakah anda ingin save?"
+			IF response == y OR yes:
+				OVERWRITE "ToDoList[edit]" with "edit_content"
+				all_list()
+			Else:
+				edit()
+	ELSE IF edit menu == 3:
+		DELETE "ToDoList[edit]"
+	ELSE:
+		all_list()
+END FUNCTION
